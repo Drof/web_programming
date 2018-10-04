@@ -1,0 +1,329 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <link rel="shortcul icon" href="logo3.png" type="image/png">
+    <meta charset="utf-8" />
+    <title>Judo - More then sport</title>
+    <link rel="stylesheet" href="web/laba2/font-awesome/css/font-awesome.min.css" />
+    <style>
+       
+        .body {
+            font: large/1.556 "Linux Libertine", Palatino, "Palatino Linotype", "Book Antiqua", Georgia, "Times New Roman", serif;
+            word-spacing: 0.1em;
+            max-width: 960px;
+            padding-bottom: 2em;
+            
+        }
+        .backround {
+            background-image: url(golovna.jpg);
+            background-size:contain;
+        }
+
+        body {
+            background-color:lavender;
+        }
+
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            
+        }
+
+        nav a {
+            display: block;
+            text-decoration: none;
+            outline: none;
+            transition: .4s ease-in-out;
+        }
+
+        .topmenu {
+            backface-visibility: hidden;
+        }
+
+            .topmenu > li {
+                display: inline-block;
+                position: relative;
+            }
+
+                .topmenu > li > a {
+                    font-family: 'Exo 2', sans-serif;
+                    height: 70px;
+                    line-height: 70px;
+                    padding: 0 30px;
+                    font-weight: bold;
+                    color: #000000;
+                    text-transform: uppercase;
+                }
+
+        .down:after {
+            content: "\f107";
+            margin-left: 8px;
+            font-family: FontAwesome;
+        }
+
+        .topmenu li a:hover {
+            color: #E6855F;
+        }
+
+        .submenu {
+            background: white;
+            border: 2px solid #003559;
+            position: absolute;
+            left: 0;
+            visibility: hidden;
+            opacity: 0;
+            z-index: 5;
+            width: 150px;
+            transform: perspective(600px) rotateX(-90deg);
+            transform-origin: 0% 0%;
+            transition: .6s ease-in-out;
+        }
+
+        .topmenu > li:hover .submenu {
+            visibility: visible;
+            opacity: 1;
+            transform: perspective(600px) rotateX(0deg);
+        }
+
+        .submenu li a {
+            color: #7f7f7f;
+            font-size: 13px;
+            line-height: 36px;
+            padding: 0 25px;
+            font-family: 'Kurale', serif;
+        }
+
+        .f {
+            position: relative;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            text-align: center;
+        }
+
+        .i {
+            text-align: center;
+        }
+
+        tfoot {
+            display: table-footer-group;
+            vertical-align: middle;
+            border-color: inherit;
+            border-top-color: inherit;
+            border-right-color: inherit;
+            border-bottom-color: inherit;
+            border-left-color: inherit;
+        }
+        td {
+            padding: 5px;
+            border: 2px solid lightgray;
+        }
+
+        .table {
+            
+            border-spacing: 5px;
+            border-collapse: separate;
+            border: 3px solid black;
+        }
+
+        p {
+            font-family: 'Times New Roman', Times, serif;
+            font-style: italic;
+        }
+
+        .gold {
+            background-color: gold;
+        }
+        .silver{
+            background-color: silver;
+        }
+        .bronze{
+            background-color:#cd7f32;
+        }
+
+        .container {
+            width: 100%;
+            margin: auto;
+            font-weight: 900;
+            text-transform: uppercase;
+            text-align: center;
+        }
+
+
+        .seven span {
+            
+            opacity: 0;
+            transform: translate(-150px, 0) scale(.3);
+            animation: leftRight .5s forwards;
+        }
+
+
+        @keyframes leftRight {
+            40% {
+                transform: translate(50px, 0) scale(.7);
+                opacity: 1;
+                color: #348c04;
+            }
+
+            60% {
+                color: #0f40ba;
+            }
+
+            80% {
+                transform: translate(0) scale(2);
+                opacity: 0;
+            }
+
+            100% {
+                transform: translate(0) scale(1);
+                opacity: 1;
+            }
+        }
+        .logo {
+            width: 95px;
+            height: 85px;
+            -webkit-animation: pulsing 2s;
+            animation: pulsing 2s;
+        }
+
+
+        @-webkit-keyframes pulsing {
+            0% {
+                -webkit-transform: scale(0.5, 0.5);
+                transform: scale(0.5, 0.5)
+            }
+
+            100% {
+                -webkit-transform: scale(1.0, 1.0);
+                transform: scale(1.0, 1.0);
+            }
+        }
+
+        @keyframes pulsing {
+            0% {
+                -webkit-transform: scale(0.5, 0.5);
+                transform: scale(0.5, 0.5)
+            }
+
+            100% {
+                -webkit-transform: scale(1.0, 1.0);
+                transform: scale(1.0, 1.0);
+            }
+        }
+
+    </style>
+
+
+
+</head>
+<body>
+    <div class="backround">
+        <header>
+            <div class="container">
+                <div class="animate seven">
+                    <h1 align="center"><font size="20" face="Monotype Corsiva"><span>J</span><span>u</span><span>d</span><span>o</span> <span>-</span> <span>m</span><span>o</span><span>r</span><span>e</span>  <span>t</span><span>h</span><span>e</span><span>n</span>  <span>s</span><span>p</span><span>o</span><span>r</span><span>t</span></font> </h1>
+                    </div>
+                </div>
+</header>
+   
+    <img src="logo3.png" class="logo" alt="Archery logo" width="95" height="85" style="position: absolute; right: 0; top: 5px;">
+    <nav>
+        <ul class="topmenu">
+            <li><a href="">Головна</a></li>
+
+            <li>
+                <a href="" class="down">Турніри</a>
+                <ul class="submenu">
+                    <li><a href="">Календар подій</a></li>
+                    <li><a href="">Наступний чемпіонат</a></li>
+                    <li><a href="">Рейтинг</a></li>
+                </ul>
+            </li>
+            <li><a href="HTMLPage2.html">Новини</a></li>
+            <li><a href="">Фанатам</a></li>
+            <li><a href="">Контакти</a></li>
+            <li><a href="">Admin</a></li>
+        </ul>
+    </nav>
+        </div>
+
+    <h1 align="center" style="color:black"><font size="20" face="Monotype Corsiva">Георгій Зантарая</h1></font>
+    <p class="i"><img src="zontik.jpg" width="850" height="350" /></p>
+    <p style="text-size-adjust:initial">
+        Георгій Малхазович Зантарая - український дзюдоїст грузинського походження, заслужений майстер спорту, чемпіон світу 2009 року, віце-чемпіон Європи 2009 року. Перший чемпіон світу з дзюдо в історії України.
+
+    </p>
+    <h1 align="center"><font size="20" face="Monotype Corsiva">Кар'єра</h1></font>
+    <h2>Досягнення на юнацьких та молодіжних турнірах</h2>
+    <p>2003 — Переможець Європейського Молодіжного Олімпійського Фестивалю (до 17 років). Париж - 55 кг</p>
+    <p>2006 — Чемпіон Європи серед юніорів (до 20 років). Таллінн (Естонія). 60 кг</p>
+    <p>2007 — Бронзовий призер Чемпіонату Європи серед молоді (до 23 років). Зальцбург (Австрія). 60 кг</p>
+    <p>2008 — Бронзовий призер Чемпіонату Європи серед молоді (до 23 років). Загреб (Хорватія). 60 кг 2009 — Чемпіон Європи. 2011 — Бронзовий призер чемпіонату світу в Парижі.</p>
+    <h2 align="center">Спортивні досягнення</h2>
+    <table class="table" align="center">
+        <thead>
+            <tr>
+                <th>Змагання</th>
+                <th class="gold">Золото</th>
+                <th class="silver">Срібло</th>
+                <th class="bronze">Бронза</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Чемпіонати Світу</td>
+                <td>1</td>
+                <td>1</td>
+                <td>2</td>
+            </tr>
+            <tr>
+                <td>Чемпіонати Європи</td>
+                <td>1</td>
+                <td>1</td>
+                <td>0</td>
+            </tr>
+            <tr>
+                <td>Кубки Світу/Гран-Прі/Великий шолом</td>
+                <td>2</td>
+                <td>2</td>
+                <td>9</td>
+            </tr>
+            <tr>
+                <td>Першість Європи (U23)</td>
+                <td>0</td>
+                <td>0</td>
+                <td>2</td>
+            </tr>
+            <tr>
+                <td>Першість Європи (U20)</td>
+                <td>1</td>
+                <td>0</td>
+                <td>0</td>
+            </tr>
+            <tr>
+                <td>Національні Чемпіонати</td>
+                <td>2</td>
+                <td>1</td>
+                <td>0</td>
+            </tr>
+            <tr>
+                <td>Національні чемпіонати (U20)</td>
+                <td>0</td>
+                <td>0</td>
+                <td>2</td>
+            </tr>
+
+        </tbody>
+        <tfoot></tfoot>
+    </table>
+    <p>
+        В грудні 2013 року у Парижі на чемпіонаті Європи серед клубів з дзюдо здобув перемогу.
+
+        На початку червня 2016 року здобув золоту нагороду Континентального кубка в Мадриді.
+    </p>
+
+    <footer align="center" class="f">Powered by Drof</footer>
+</body>
+</html>

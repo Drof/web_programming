@@ -1,0 +1,306 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    
+    <link rel="shortcul icon" href="logo3.png" type="image/png">
+    <meta charset="utf-8" />
+    <title>Judo - More then sport</title>
+    <style>
+        .body {
+            font: large/1.556 "Linux Libertine", Palatino, "Palatino Linotype", "Book Antiqua", Georgia, "Times New Roman", serif;
+            word-spacing: 0.1em;
+            max-width: 960px;
+            margin: 0 auto;
+            padding-bottom: 2em;
+        }
+
+        .backround {
+            background-image: url(golovna.jpg);
+            background-size: contain;
+        }
+        body {
+            background-color: lavender;
+        }
+
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav a {
+            display: block;
+            text-decoration: none;
+            outline: none;
+            transition: .4s ease-in-out;
+        }
+
+        .topmenu {
+            backface-visibility: hidden;
+        }
+
+            .topmenu > li {
+                display: inline-block;
+                position: relative;
+            }
+
+                .topmenu > li > a {
+                    font-family: 'Exo 2', sans-serif;
+                    height: 70px;
+                    line-height: 70px;
+                    padding: 0 30px;
+                    font-weight: bold;
+                    color: #000000;
+                    text-transform: uppercase;
+                }
+
+        .down:after {
+            content: "\f107";
+            margin-left: 8px;
+            font-family: FontAwesome;
+        }
+
+        .topmenu li a:hover {
+            color: #E6855F;
+        }
+
+        .submenu {
+            background: white;
+            border: 2px solid #003559;
+            position: absolute;
+            left: 0;
+            visibility: hidden;
+            opacity: 0;
+            z-index: 5;
+            width: 150px;
+            transform: perspective(600px) rotateX(-90deg);
+            transform-origin: 0% 0%;
+            transition: .6s ease-in-out;
+        }
+
+        .topmenu > li:hover .submenu {
+            visibility: visible;
+            opacity: 1;
+            transform: perspective(600px) rotateX(0deg);
+        }
+
+        .submenu li a {
+            color: #7f7f7f;
+            font-size: 13px;
+            line-height: 36px;
+            padding: 0 25px;
+            font-family: 'Kurale', serif;
+        }
+
+        .f {
+            position: relative;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            text-align: center;
+        }
+
+        .i {
+            text-align: center;
+        }
+
+        tfoot {
+            display: table-footer-group;
+            vertical-align: middle;
+            border-color: inherit;
+            border-top-color: inherit;
+            border-right-color: inherit;
+            border-bottom-color: inherit;
+            border-left-color: inherit;
+        }
+
+        .table {
+            border-spacing: 2px;
+            color: #222;
+            margin: 1em 0;
+            border: 1px solid #a2a9b1;
+            border-collapse: collapse;
+            font-size: 100%;
+        }
+
+        p {
+            font-family: 'Times New Roman', Times, serif;
+            font-style: italic;
+        }
+
+        .container {
+            width: 100%;
+            margin: auto;
+            font-weight: 900;
+            text-transform: uppercase;
+            text-align: center;
+        }
+
+
+        .seven span {
+            opacity: 0;
+            transform: translate(-150px, 0) scale(.3);
+            animation: leftRight .5s forwards;
+        }
+
+
+        @keyframes leftRight {
+            40% {
+                transform: translate(50px, 0) scale(.7);
+                opacity: 1;
+                color: #348c04;
+            }
+
+            60% {
+                color: #0f40ba;
+            }
+
+            80% {
+                transform: translate(0) scale(2);
+                opacity: 0;
+            }
+
+            100% {
+                transform: translate(0) scale(1);
+                opacity: 1;
+            }
+        }
+        .logo {
+            width: 95px;
+            height: 85px;
+            -webkit-animation: pulsing 2s;
+            animation: pulsing 2s;
+        }
+
+
+        @-webkit-keyframes pulsing {
+            0% {
+                -webkit-transform: scale(0.5, 0.5);
+                transform: scale(0.5, 0.5)
+            }
+
+            100% {
+                -webkit-transform: scale(1.0, 1.0);
+                transform: scale(1.0, 1.0);
+            }
+        }
+
+        @keyframes pulsing {
+            0% {
+                -webkit-transform: scale(0.5, 0.5);
+                transform: scale(0.5, 0.5)
+            }
+
+            100% {
+                -webkit-transform: scale(1.0, 1.0);
+                transform: scale(1.0, 1.0);
+            }
+        }
+        .ng {
+            display: flex;
+        }
+        .n {
+            border: 2px solid #000;
+            height: 550px;
+            width:250px;
+            margin-left:210px;
+            margin-right:20px;
+            padding:2px;
+        }
+        .n2 {
+            border: 2px solid #000;
+            height: 550px;
+            width: 250px;
+            margin-right: 20px;
+            padding: 2px;
+        }
+        .n3 {
+            border: 2px solid #000;
+            height: 550px;
+            width: 250px;
+            margin-right: 20px;
+            padding: 2px;
+        }
+        .n4 {
+            border: 2px solid #000;
+            height: 550px;
+            width: 250px;
+            margin-right: 20px;
+            padding: 2px;
+        }
+    </style>
+</head>
+<body>
+    <div class="backround">
+        <header>
+            <div class="container">
+                <div class="animate seven">
+                    <h1 align="center"><font size="20" face="Monotype Corsiva"><span>J</span><span>u</span><span>d</span><span>o</span> <span>-</span> <span>m</span><span>o</span><span>r</span><span>e</span>  <span>t</span><span>h</span><span>e</span><span>n</span>  <span>s</span><span>p</span><span>o</span><span>r</span><span>t</span></font> </h1>
+                </div>
+            </div>
+        </header>
+
+        <img src="logo3.png" class="logo" ; alt="Archery logo" width="95" height="85" style="position: absolute; right: 10px; top: 40px; margin:0 10px">
+
+        <nav>
+            <ul class="topmenu">
+                <li><a href="index.html">Головна</a></li>
+
+                <li>
+                    <a href="" class="down">Турніри</a>
+                    <ul class="submenu">
+                        <li><a href="">Календар подій</a></li>
+                        <li><a href="">Наступний чемпіонат</a></li>
+                        <li><a href="">Рейтинг</a></li>
+                    </ul>
+                </li>
+                <li><a href="HTMLPage2.html">Новини</a></li>
+                <li><a href="">Фанатам</a></li>
+                <li><a href="">Контакти</a></li>
+                <li><a href="">Admin</a></li>
+            </ul>
+        </nav>
+    </div>
+    <h1 align="center" style="color:black"><font size="20" face="Monotype Corsiva">Основні новини</h1></font>
+    <div class="ng">
+        <div class="n">
+            <img src="new1.png" height="150" width="248" />
+            <h3>World Judo Championships 2018</h3>
+            <p>The "old" men did it again. Georgii Zantaraia has won his 6th world medal. Wow. Watch how happy the </p>
+            <p><a href="https://www.youtube.com/watch?v=jPnbrp-oUZk&feature=youtu.be">Watch here</a></p>
+        </div>
+        <div class="n2">
+           <img src="new2.jpg" height="150" width="248" />
+           <h3>17-year-old Ukrainian Daria Beloded won the world championship in judo</h3>
+           <p>17-year-old Ukrainian judoist Daria Beloded won the World Championship in Baku in the category up to 48 kg. In the final battle, Beloded Ippon (the highest mark a fighter can achieve in Japanese martial arts) overpowered Japanese representative Funu Tonaki.</p>
+          <p><a href="https://www.youtube.com/watch?time_continue=1&v=ePxi3qhSnS0">Watch here</a></p>
+        </div>
+        <div class="n3">
+            <img src="new3.jpg" height="150" width="248" />
+            <h3>World Judo Championships Team Event 2018</h3>
+            <p>
+                Tournament favourites, Japan and France put on a very convincing performance and fulfilled the prophecy by meeting each other in the final day of the World Judo Championships 2018.
+                Each team for the final contained World medallists from this past week, including Marie Eve GAHIE and Axel CLERGET of France as well as YOSHIDA Tsukasa, ONO Yoko, ASAHINA Sarah and HARASAWA Hisatoshi of Japan.
+           </p>     
+         </div>
+        <div class="n4">
+            <img src="new4.jpg" height="150" width="248"/>
+            <h3>Heydarov ends on a hight</h3>
+            <p>The bronze medal fight was against Mongolian TSEND-OCHIR, who had previously defeated HEYDAROV’s team mate ORUJOV. Though another difficult contest for the young athlete, he secured a waza ari for a win and a bronze medal. The arena erupted with his success as he celebrated on the tatami, the first medal for the home nation, in front of an ecstatic crowd and the President of Azerbaijan.</p>
+            <p><a href="https://youtu.be/pzTS_h87PgA"> Watch here </a></p>
+        </div>
+
+
+
+
+
+
+
+
+    </div>
+
+
+    <footer align="center" class="f">Powered by Drof</footer>
+</body>
+</html>
