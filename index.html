@@ -5,30 +5,34 @@
     <link rel="shortcul icon" href="logo3.png" type="image/png">
     <meta charset="utf-8" />
     <title>Judo - More then sport</title>
-    <link rel="stylesheet" href="web/laba2/font-awesome/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="./font-awesome/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+            integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+            crossorigin="anonymous"></script>
+    <script src="./js/bootstrap.bundle.min.js"></script>
     <style>
-       
+
         .body {
             font: large/1.556 "Linux Libertine", Palatino, "Palatino Linotype", "Book Antiqua", Georgia, "Times New Roman", serif;
             word-spacing: 0.1em;
             max-width: 960px;
             padding-bottom: 2em;
-            
         }
+
         .backround {
             background-image: url(golovna.jpg);
-            background-size:contain;
+            background-size: contain;
         }
 
         body {
-            background-color:lavender;
+            background-color: lavender;
         }
 
         nav ul {
             list-style: none;
             margin: 0;
             padding: 0;
-            
         }
 
         nav a {
@@ -116,13 +120,13 @@
             border-bottom-color: inherit;
             border-left-color: inherit;
         }
+
         td {
             padding: 5px;
             border: 2px solid lightgray;
         }
 
         .table {
-            
             border-spacing: 5px;
             border-collapse: separate;
             border: 3px solid black;
@@ -136,11 +140,13 @@
         .gold {
             background-color: gold;
         }
-        .silver{
+
+        .silver {
             background-color: silver;
         }
-        .bronze{
-            background-color:#cd7f32;
+
+        .bronze {
+            background-color: #cd7f32;
         }
 
         .container {
@@ -153,7 +159,6 @@
 
 
         .seven span {
-            
             opacity: 0;
             transform: translate(-150px, 0) scale(.3);
             animation: leftRight .5s forwards;
@@ -181,6 +186,7 @@
                 opacity: 1;
             }
         }
+
         .logo {
             width: 95px;
             height: 85px;
@@ -212,7 +218,6 @@
                 transform: scale(1.0, 1.0);
             }
         }
-
     </style>
 
 
@@ -229,27 +234,33 @@
 </header>
    
     <img src="logo3.png" class="logo" alt="Archery logo" width="95" height="85" style="position: absolute; right: 0; top: 5px;">
-    <nav>
-        <ul class="topmenu">
-            <li><a href="">Головна</a></li>
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
 
-            <li>
-                <a href="" class="down">Турніри</a>
-                <ul class="submenu">
-                    <li><a href="">Календар подій</a></li>
-                    <li><a href="">Наступний чемпіонат</a></li>
-                    <li><a href="">Рейтинг</a></li>
-                </ul>
-            </li>
-            <li><a href="HTMLPage2.html">Новини</a></li>
-            <li><a href="">Фанатам</a></li>
-            <li><a href="">Контакти</a></li>
-            <li><a href="">Admin</a></li>
-        </ul>
+            <ul class="navbar-nav mr-auto topmenu">
+                <li class="nav-item active"><a href="">Головна</a></li>
+
+                <li class="nav-item">
+                    <a href="" class="down">Турніри</a>
+                    <ul class="submenu">
+                        <li><a href="">Календар подій</a></li>
+                        <li><a href="">Наступний чемпіонат</a></li>
+                        <li><a href="">Рейтинг</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item"><a href="HTMLPage2.html">Новини</a></li>
+                <li class="nav-item"><a href="">Фанатам</a></li>
+                <li class="nav-item"><a href="">Контакти</a></li>
+                <li class="nav-item"><a href="">Admin</a></li>
+            </ul>
+        </div>
     </nav>
         </div>
 
-    <h1 align="center" style="color:black"><font size="20" face="Monotype Corsiva">Георгій Зантарая</h1></font>
+    <h1 align="center" style="color:black"><font size="20" face="Monotype Corsiva">Георгій Зантарая</font></h1>
     <p class="i"><img src="zontik.jpg" width="850" height="350" /></p>
     <p style="text-size-adjust:initial">
         Георгій Малхазович Зантарая - український дзюдоїст грузинського походження, заслужений майстер спорту, чемпіон світу 2009 року, віце-чемпіон Європи 2009 року. Перший чемпіон світу з дзюдо в історії України.
@@ -323,7 +334,8 @@
 
         На початку червня 2016 року здобув золоту нагороду Континентального кубка в Мадриді.
     </p>
-
+    
     <footer align="center" class="f">Powered by Drof</footer>
+
 </body>
 </html>
